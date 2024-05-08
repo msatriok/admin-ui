@@ -6,6 +6,7 @@ import ProductionQuantityLimitsIcon from '@mui/icons-material/ProductionQuantity
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
+import CategoryIcon from '@mui/icons-material/Category';
 
 const Sidebar = () => {
   return (
@@ -40,6 +41,12 @@ const Sidebar = () => {
         <ShoppingBasketIcon className="icon"/>
         <span>Orders</span>
       </li>
+      <Link to="/categories">
+          <li>
+           <CategoryIcon className='icon'></CategoryIcon>
+            <span>Categories</span>
+          </li>
+        </Link>
       <p className="title">USER</p>
       <li>
         <AccountBoxIcon className="icon"/>
